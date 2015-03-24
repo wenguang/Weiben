@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KNj-HL-fyG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Detail-->
+        <scene sceneID="CrI-6X-w3K">
+            <objects>
+                <viewController storyboardIdentifier="WBDetailViewController" title="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="keo-13-Nmc" customClass="WBDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wc7-xq-8HB"/>
+                        <viewControllerLayoutGuide type="bottom" id="xSS-D5-iJf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MQI-Fj-XdR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-fW-AYJ">
+                                <rect key="frame" x="217" y="177" width="52" height="30"/>
+                                <state key="normal" title="posting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcy-0g-2Pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1098" y="1239"/>
+        </scene>
+        <!--星标-->
+        <scene sceneID="Tbv-XP-9zc">
+            <objects>
+                <viewController storyboardIdentifier="WBStarredViewController" title="星标" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5jP-it-FSf" customClass="WBStarredViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSx-mo-DX5"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Vh-Id-TII"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="msw-Bs-B5M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kk6-Rt-76t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="2082"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1aF-fw-SKc">
+            <objects>
+                <navigationController storyboardIdentifier="RootNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KNj-HL-fyG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bd4-sU-kFU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.25314129470000002" green="0.56055352960000004" blue="0.94827204939999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tu-lZ-Yay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1072" y="-36"/>
+        </scene>
+        <!--微本-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WBMainViewController" title="微本" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WBMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="-636"/>
+        </scene>
+        <!--Posting View Controller-->
+        <scene sceneID="gDD-ug-eXi">
+            <objects>
+                <viewController storyboardIdentifier="WBPostingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tog-TF-OWT" customClass="WBPostingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e3a-yZ-dDO"/>
+                        <viewControllerLayoutGuide type="bottom" id="a8r-Le-3kw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eI8-C5-iUk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOG-BA-6Mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-648"/>
+        </scene>
+        <!--照片-->
+        <scene sceneID="Q95-ad-40d">
+            <objects>
+                <viewController storyboardIdentifier="WBPhotosViewController" title="照片" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qrY-rA-3D3" customClass="WBPhotosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Buk-g0-KOa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wp7-Gu-Xn4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75n-ka-m51">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSS-Fa-6Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="510"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="8Z5-wo-fIZ">
+            <objects>
+                <viewController storyboardIdentifier="WBSettingsViewController" title="Settings" id="YC1-lm-Tee" customClass="WBSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5m5-Kr-VgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebp-5I-FLm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NR6-24-zPX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kth-b2-kq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="662"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="NU5-ot-DhS">
+            <objects>
+                <viewController storyboardIdentifier="WBTagsViewController" title="Tags" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QrP-3p-ZLe" customClass="WBTagsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UpT-Aj-Ym9"/>
+                        <viewControllerLayoutGuide type="bottom" id="AAb-Xy-Ui2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AH8-5b-UP1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-Gk-npH">
+                                <rect key="frame" x="128" y="114" width="52" height="30"/>
+                                <state key="normal" title="posting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toPosting:" destination="QrP-3p-ZLe" eventType="touchUpInside" id="2au-Ph-GO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOI-me-E4N">
+                                <rect key="frame" x="140" y="162" width="38" height="30"/>
+                                <state key="normal" title="detail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toDetail:" destination="QrP-3p-ZLe" eventType="touchUpInside" id="8Pb-D5-ibW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="toDetailButton" destination="tOI-me-E4N" id="7sa-kf-d1J"/>
+                        <outlet property="toPostingButton" destination="mtF-Gk-npH" id="b2g-Aa-xDG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efp-dt-tKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="1740"/>
+        </scene>
+        <!--时间-->
+        <scene sceneID="dh7-Nf-EfF">
+            <objects>
+                <viewController storyboardIdentifier="WBTimelineViewController" title="时间" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2uC-Hx-6tf" customClass="WBTimelineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1EM-X2-X6z"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCC-qb-kT0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="npx-H6-cML">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6b1-CM-eiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1718"/>
+        </scene>
+    </scenes>
+</document>

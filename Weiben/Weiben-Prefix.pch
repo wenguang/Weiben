@@ -1,0 +1,13 @@
+//
+//  Weiben-Prefix.pch
+//  Weiben
+//
+//  Created by wenguang pan on 12/8/14.
+//  Copyright (c) 2014 wenguang. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <CoreLocation/CoreLocation.h>
+
