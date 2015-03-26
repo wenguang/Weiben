@@ -44,4 +44,4 @@ Weiben's dependencies include [MBProgressHUD](https://github.com/jdg/MBProgressH
 
 ---
 
-This code is distributed under the terms and conditions of the [MIT license](https://github.com/wenguang/Weiben/blob/master/LICENSE).
+This code is distributed under the terms and conditions of the [MIT license](https://github.com/wenguang/Weiben/blob/master/LICENSE.md).
