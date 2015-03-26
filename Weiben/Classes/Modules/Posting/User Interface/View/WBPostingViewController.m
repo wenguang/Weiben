@@ -13,6 +13,7 @@
 #import "WBBarItemImageView.h"
 #import "MBProgressHUD.h"
 #import "WBDetailBackgroundView.h"
+#import "UIImage+WBUtility.h"
 
 @interface WBPostingViewController ()
 {
@@ -274,7 +275,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-mm-dd hh:mm:ss"];
     NSString *dateString = [dateFormatter stringFromDate:_displayData.date];
-    NSAttributedString *dateAttrString = [[NSAttributedString alloc] initWithString:dateString attributes:@{ NSFontAttributeName: [UIFont systemFontOfSize:14], NSForegroundColorAttributeName : [UIColor blackColor] }];
+    NSAttributedString *dateAttrString = [[NSAttributedString alloc] initWithString:dateString attributes:@{ NSFontAttributeName: [UIFont systemFontOfSize:11], NSForegroundColorAttributeName : [UIColor blackColor] }];
     CGRect dateAttrStringRect = [dateAttrString boundingRectWithSize:CGSizeMake(textFixedWidth - 6, 1000) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) context:nil];
     dateStringHeight = dateAttrStringRect.size.height;
     
@@ -283,7 +284,7 @@
     [partContentView addSubview:starView];
     
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(30 + dateStringHeight, floatingY, textFixedWidth - (30 + dateStringHeight + 5), dateStringHeight)];
-    dateLabel.font = [UIFont systemFontOfSize:17];
+    dateLabel.font = [UIFont systemFontOfSize:11];
     dateLabel.textColor = [UIColor grayColor];
     dateLabel.text = dateString;
     [partContentView addSubview:dateLabel];
@@ -306,7 +307,7 @@
         [partContentView addSubview:pinView];
         
         UILabel *placeLabel = [[UILabel alloc] initWithFrame:CGRectMake(30 + dateStringHeight, floatingY, textFixedWidth - (30 + dateStringHeight + 5), dateStringHeight)];
-        placeLabel.font = [UIFont systemFontOfSize:14];
+        placeLabel.font = [UIFont systemFontOfSize:10];
         placeLabel.textColor = [UIColor grayColor];
         placeLabel.text = _displayData.place;
         [partContentView addSubview:placeLabel];
@@ -457,7 +458,7 @@
     if (_displayData.image)
     {
         
-        _removeBarItemImageView.image = _displayData.image;
+        _removeBarItemImageView.image = [_displayData.image imageByScalingAndCroppingForSize:CGSizeMake(32, 32)];
         if (_displayData.star)
         {
             [_inputToolbar setItems:@[_imageRemoveBarItem, [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil], _starBarItem]];

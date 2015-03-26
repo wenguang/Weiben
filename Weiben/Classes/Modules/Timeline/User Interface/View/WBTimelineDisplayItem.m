@@ -21,7 +21,7 @@
     
     if (postItem.image)
     {
-        item.scaledImage = [postItem.image imageByScalingAndCroppingForSize:CGSizeMake(46, 46)];
+        item.scaledImage = [postItem.image imageByScalingAndCroppingForSize:CGSizeMake(72, 72)];
     }
     return item;
 }

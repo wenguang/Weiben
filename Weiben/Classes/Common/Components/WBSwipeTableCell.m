@@ -2,7 +2,7 @@
 //  WBSwipeTableCell.m
 //  Weiben
 //
-//  Created by wenguang pan on 2/23/15.
+//  Created by wenguang pan on 3/26/15.
 //  Copyright (c) 2015 wenguang. All rights reserved.
 //
 

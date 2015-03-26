@@ -21,10 +21,7 @@
 {
     [_displayItem.scaledImage drawInRect:rect];
     
-    if (_displayItem.postItem.star)
-    {
-        [[UIImage imageNamed:@"fav.png"] drawInRect:CGRectMake(10, 10, 24, 24)];
-    }
+    [[UIImage imageNamed:(_displayItem.postItem.star ? @"fav.png" : @"fav-empty.png")] drawInRect:CGRectMake(10, 10, 28, 28)];
     
     if (_displayItem.postItem.place && ![_displayItem.postItem.place isEqualToString:@""])
     {
@@ -44,8 +41,8 @@
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
     NSString *dateText = [dateFormatter stringFromDate:_displayItem.postItem.date];
-    UIFont *dateTextFont = [UIFont systemFontOfSize:11];
-    UIColor *dateTextColor = [UIColor whiteColor];
+    UIFont *dateTextFont = [UIFont boldSystemFontOfSize:12];
+    UIColor *dateTextColor = [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1.0];
     NSDictionary *dateAttribute = @{
                                          NSFontAttributeName:dateTextFont,
                                          NSForegroundColorAttributeName:dateTextColor

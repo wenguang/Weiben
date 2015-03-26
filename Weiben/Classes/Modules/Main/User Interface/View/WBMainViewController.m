@@ -12,6 +12,7 @@
 #import "WBUtility.h"
 #import "MBProgressHUD.h"
 #import "WBMainBackgroundView.h"
+#import "WBBarItemImageView.h"
 
 static NSString* const WBStatisticsCellIdentifier = @"WBStatisticsCell";
 static const int tableRowHeight = 60;
@@ -89,6 +90,25 @@ static const int tableRowHeight = 60;
     UIBarButtonItem *addBarItem;
     addBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(toPosting)];
     [self.navigationItem setRightBarButtonItem:addBarItem];
+    
+    /*
+    WBBarItemImageView *cameraIV = [[WBBarItemImageView alloc] initWithFrame:CGRectMake((viewSize.width - 60 * 2) / 3, viewSize.height - 180, 60, 60)];
+    cameraIV.contentMode = UIViewContentModeScaleAspectFill;
+    cameraIV.tintColor = [UIColor whiteColor];
+    cameraIV.image = [[UIImage imageNamed:@"camera.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    cameraIV.target = self;
+    cameraIV.action = @selector(showImagePickerActionSheet);
+    [self.view addSubview:cameraIV];
+    
+    
+    WBBarItemImageView *addIV = [[WBBarItemImageView alloc] initWithFrame:CGRectMake(60 + (viewSize.width - 60 * 2) / 3 * 2, viewSize.height - 180, 60, 60)];
+    addIV.contentMode = UIViewContentModeScaleAspectFill;
+    addIV.tintColor = [UIColor whiteColor];
+    addIV.image = [[UIImage imageNamed:@"add.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    addIV.target = self;
+    addIV.action = @selector(toPosting);
+    [self.view addSubview:addIV];
+     */
 }
 
 - (void)didReceiveMemoryWarning

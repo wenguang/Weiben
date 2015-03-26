@@ -42,11 +42,11 @@
             leftCircleImage = [UIImage imageNamed:@"circle-blue-24.png"];
         }
         
-        CGRect leftCircleRect = CGRectMake(10, 12, 20, 20);
+        CGRect leftCircleRect = CGRectMake(10, (rect.size.height - 20) / 2, 20, 20);
         [leftCircleImage drawInRect:leftCircleRect];
         
-        UIFont *intervalHeadTextFont = [UIFont systemFontOfSize:18];
-        UIColor *intervalHeadTextColor = [UIColor blackColor];
+        UIFont *intervalHeadTextFont = [UIFont boldSystemFontOfSize:18];
+        UIColor *intervalHeadTextColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0];
         NSDictionary *attribute = @{
                                     NSFontAttributeName:intervalHeadTextFont,
                                     NSForegroundColorAttributeName:intervalHeadTextColor
@@ -73,12 +73,12 @@
         {
             leftCircleImage = [UIImage imageNamed:@"circle-blue-16.png"];
         }
-        [leftCircleImage drawInRect:CGRectMake(16, 26, 8, 8)];
+        [leftCircleImage drawInRect:CGRectMake(16, (rect.size.height - 8) / 2, 8, 8)];
         
         if (_displayItem.scaledImage)
         {
-            CGSize imageSize = CGSizeMake(46, 46);
-            [_displayItem.scaledImage drawInRect:CGRectMake(rect.size.width - imageSize.width - 6, (rect.size.height - imageSize.height) / 2, imageSize.width, imageSize.height)];
+            CGSize imageSize = CGSizeMake(72, 72);
+            [_displayItem.scaledImage drawInRect:CGRectMake(rect.size.width - imageSize.width - 4, (rect.size.height - imageSize.height) / 2, imageSize.width, imageSize.height)];
         }
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -86,47 +86,47 @@
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         NSString *dateText = [dateFormatter stringFromDate:_displayItem.postItem.date];
         NSString *yearMonthText = [dateText substringToIndex:7];
-        UIFont *yearMonthFont = [UIFont systemFontOfSize:12];
-        UIColor *yearMonthColor = [UIColor blackColor];
+        UIFont *yearMonthFont = [UIFont boldSystemFontOfSize:12];
+        UIColor *yearMonthColor = [UIColor grayColor];
         NSDictionary *yearMonthAttribute = @{
                                              NSFontAttributeName:yearMonthFont,
                                              NSForegroundColorAttributeName:yearMonthColor
                                              };
         CGSize yearMonthTextSize = [yearMonthText sizeWithAttributes:yearMonthAttribute];
-        [yearMonthText drawInRect:CGRectMake(35, 2, yearMonthTextSize.width, yearMonthTextSize.height) withAttributes:yearMonthAttribute];
+        [yearMonthText drawInRect:CGRectMake(30, 6, yearMonthTextSize.width, yearMonthTextSize.height) withAttributes:yearMonthAttribute];
         NSString *dayText = [dateText substringFromIndex:8];
-        UIFont *dayFont = [UIFont boldSystemFontOfSize:23];
+        UIFont *dayFont = [UIFont boldSystemFontOfSize:34];
         UIColor *dayColor = _displayItem.postItem.star ? [UIColor colorWithRed:0.99 green:0.67 blue:0.0 alpha:1.0] : [UIColor colorWithRed:0.41 green:0.41 blue:0.41 alpha:1.0];
         NSDictionary *dayAttribute = @{
                                     NSFontAttributeName:dayFont,
                                     NSForegroundColorAttributeName:dayColor
                                     };
         CGSize dayTextSize = [dayText sizeWithAttributes:dayAttribute];
-        [dayText drawInRect:CGRectMake(35, 2 + yearMonthTextSize.height, dayTextSize.width, dayTextSize.height) withAttributes:dayAttribute];
+        [dayText drawInRect:CGRectMake(30, 6 + yearMonthTextSize.height, dayTextSize.width, dayTextSize.height) withAttributes:dayAttribute];
         
         if (_displayItem.postItem.place && ![_displayItem.postItem.place isEqualToString:@""])
         {
             UIImage *pinImage  = [UIImage imageNamed:@"pin-orange-16.png"];
-            [pinImage drawInRect:CGRectMake(35, 2 + yearMonthTextSize.height + dayTextSize.height, 12, 12)];
+            [pinImage drawInRect:CGRectMake(30, 6 + yearMonthTextSize.height + dayTextSize.height, 12, 12)];
             UIFont *placeFont = [UIFont systemFontOfSize:9];
-            UIColor *placeColor = [UIColor blackColor];
+            UIColor *placeColor = [UIColor colorWithRed:0.32 green:0.32 blue:0.32 alpha:0.95];
             NSDictionary *placeAttribute = @{
                                              NSFontAttributeName:placeFont,
                                              NSForegroundColorAttributeName:placeColor
                                              };
             CGSize placeSize = [_displayItem.postItem.place sizeWithAttributes:placeAttribute];
-            [_displayItem.postItem.place drawInRect:CGRectMake(35 + 12, 2 + yearMonthTextSize.height + dayTextSize.height, placeSize.width, placeSize.height) withAttributes:placeAttribute];
+            [_displayItem.postItem.place drawInRect:CGRectMake(30 + 12, 6 + yearMonthTextSize.height + dayTextSize.height + 2, placeSize.width, placeSize.height) withAttributes:placeAttribute];
         }
         
         if (_displayItem.postItem.text && ![_displayItem.postItem.text isEqualToString:@""])
         {
-            UIFont *textFont = [UIFont systemFontOfSize:16];
-            UIColor *textColor = [UIColor blackColor];
+            UIFont *textFont = [UIFont systemFontOfSize:13];
+            UIColor *textColor = [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1.0];
             NSDictionary *textAttribute = @{
                                             NSFontAttributeName:textFont,
                                             NSForegroundColorAttributeName:textColor
                                             };
-            [_displayItem.postItem.text drawInRect:CGRectMake(35 + yearMonthTextSize.width + 5, 2 + yearMonthTextSize.height, rect.size.width - (35 + yearMonthTextSize.width + 5) - 46 - 6, dayTextSize.height) withAttributes:textAttribute];
+            [_displayItem.postItem.text drawInRect:CGRectMake(30 + yearMonthTextSize.width + 5, 6 + yearMonthTextSize.height, rect.size.width - (30 + yearMonthTextSize.width + 5) - 72 - 6, dayTextSize.height) withAttributes:textAttribute];
         }
     }
 }

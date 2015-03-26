@@ -16,7 +16,7 @@
 #import "WBUtility.h"
 
 static NSString* const WBTimelineCellIdentifier = @"WBTimelineCell";
-static const CGFloat tableRowHeight = 60.0f;
+static const CGFloat tableRowHeight = 80.0f;
 
 @interface WBTimelineViewController ()
 {
@@ -56,6 +56,7 @@ static const CGFloat tableRowHeight = 60.0f;
     tableView = [[UITableView alloc] initWithFrame:tableFrame];
     tableView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
     tableView.opaque = NO;
+    tableView.rowHeight = tableRowHeight;
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];

@@ -119,9 +119,6 @@ typedef NS_ENUM(NSInteger, MGSwipeState) {
  */
 @interface MGSwipeTableCell : UITableViewCell
 
-/** temp property add by wenguang */
-//@property (nonatomic, copy) NSString *postID;
-
 /** optional delegate (not retained) */
 @property (nonatomic, weak) id<MGSwipeTableCellDelegate> delegate;
 

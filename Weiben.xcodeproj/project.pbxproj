@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80105FD1A9B2A8300AC2CCB /* WBSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A80105FC1A9B2A8300AC2CCB /* WBSwipeTableCell.m */; };
 		A80106001A9B2CE000AC2CCB /* WBTimelineTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A80105FF1A9B2CE000AC2CCB /* WBTimelineTableCell.m */; };
 		A8074D3A1AB6DE1800C57711 /* delete-32.png in Resources */ = {isa = PBXBuildFile; fileRef = A8074D391AB6DE1800C57711 /* delete-32.png */; };
 		A8074D3C1AB6E35100C57711 /* delete-24.png in Resources */ = {isa = PBXBuildFile; fileRef = A8074D3B1AB6E35100C57711 /* delete-24.png */; };
@@ -59,6 +58,9 @@
 		A84377AD1A5A5A2A006E5B3C /* WBTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A84377AC1A5A5A2A006E5B3C /* WBTagItem.m */; };
 		A84481601A3570A10036E2EE /* WBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A844815F1A3570A10036E2EE /* WBDataManager.m */; };
 		A84D8C031A95FB18006BCA79 /* streamline-map-pin-20.png in Resources */ = {isa = PBXBuildFile; fileRef = A84D8C021A95FB18006BCA79 /* streamline-map-pin-20.png */; };
+		A869A1C41AC3F54F008D8C9B /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A1C11AC3F54F008D8C9B /* MGSwipeButton.m */; };
+		A869A1C51AC3F54F008D8C9B /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A1C31AC3F54F008D8C9B /* MGSwipeTableCell.m */; };
+		A869A1C81AC3F590008D8C9B /* WBSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A1C71AC3F590008D8C9B /* WBSwipeTableCell.m */; };
 		A86BD4321AC145E1006BC6DD /* weiben-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A86BD42E1AC145E1006BC6DD /* weiben-1024.png */; };
 		A86BD4331AC145E1006BC6DD /* weiben-180.png in Resources */ = {isa = PBXBuildFile; fileRef = A86BD42F1AC145E1006BC6DD /* weiben-180.png */; };
 		A86BD4341AC145E1006BC6DD /* weiben-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A86BD4301AC145E1006BC6DD /* weiben-120.png */; };
@@ -96,6 +98,8 @@
 		A87C6C8D1A302FA900709042 /* WBAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C6C7F1A302FA900709042 /* WBAppDependencies.m */; };
 		A87C6D9D1A30379E00709042 /* WBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C6D9C1A30379E00709042 /* WBTag.m */; };
 		A87C6DA11A3098BB00709042 /* WBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C6DA01A3098BB00709042 /* WBUtility.m */; };
+		A889F0911AC30CF10039EB3B /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A889F0901AC30CF10039EB3B /* camera.png */; };
+		A889F0951AC311610039EB3B /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = A889F0941AC311610039EB3B /* add.png */; };
 		A88DD9B21A77C19100F58018 /* streamline-mappin-128.png in Resources */ = {isa = PBXBuildFile; fileRef = A88DD9B11A77C19100F58018 /* streamline-mappin-128.png */; };
 		A89560C01AB28B58002A3199 /* NSArray+WBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A89560BF1AB28B58002A3199 /* NSArray+WBUtility.m */; };
 		A89D4D621A568BC700912106 /* WBManagedTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A89D4D611A568BC700912106 /* WBManagedTag.m */; };
@@ -103,8 +107,6 @@
 		A8A22B211AB1E400001714AE /* picture-3-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A22B201AB1E400001714AE /* picture-3-48.png */; };
 		A8A22B231AB1E707001714AE /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A22B221AB1E707001714AE /* star2.png */; };
 		A8A4C9281AB9507A00E0E572 /* WBMainBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4C9271AB9507A00E0E572 /* WBMainBackgroundView.m */; };
-		A8BCDC161A983287004EC73C /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCDC131A983287004EC73C /* MGSwipeButton.m */; };
-		A8BCDC171A983287004EC73C /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCDC151A983287004EC73C /* MGSwipeTableCell.m */; };
 		A8BEE9A71A31B47D0075B427 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BEE9A11A31B47D0075B427 /* CoreDataManager.m */; };
 		A8BEE9A81A31B47D0075B427 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BEE9A31A31B47D0075B427 /* NSManagedObject+ActiveRecord.m */; };
 		A8BEE9A91A31B47D0075B427 /* NSManagedObject+Mappings.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BEE9A51A31B47D0075B427 /* NSManagedObject+Mappings.m */; };
@@ -154,8 +156,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A80105FB1A9B2A8300AC2CCB /* WBSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSwipeTableCell.h; sourceTree = "<group>"; };
-		A80105FC1A9B2A8300AC2CCB /* WBSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSwipeTableCell.m; sourceTree = "<group>"; };
 		A80105FE1A9B2CE000AC2CCB /* WBTimelineTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTimelineTableCell.h; sourceTree = "<group>"; };
 		A80105FF1A9B2CE000AC2CCB /* WBTimelineTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTimelineTableCell.m; sourceTree = "<group>"; };
 		A8074D391AB6DE1800C57711 /* delete-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-32.png"; sourceTree = "<group>"; };
@@ -254,6 +254,12 @@
 		A844815E1A3570A10036E2EE /* WBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataManager.h; sourceTree = "<group>"; };
 		A844815F1A3570A10036E2EE /* WBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataManager.m; sourceTree = "<group>"; };
 		A84D8C021A95FB18006BCA79 /* streamline-map-pin-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "streamline-map-pin-20.png"; sourceTree = "<group>"; };
+		A869A1C01AC3F54F008D8C9B /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		A869A1C11AC3F54F008D8C9B /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		A869A1C21AC3F54F008D8C9B /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		A869A1C31AC3F54F008D8C9B /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		A869A1C61AC3F590008D8C9B /* WBSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSwipeTableCell.h; sourceTree = "<group>"; };
+		A869A1C71AC3F590008D8C9B /* WBSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSwipeTableCell.m; sourceTree = "<group>"; };
 		A86BD42E1AC145E1006BC6DD /* weiben-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weiben-1024.png"; sourceTree = "<group>"; };
 		A86BD42F1AC145E1006BC6DD /* weiben-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weiben-180.png"; sourceTree = "<group>"; };
 		A86BD4301AC145E1006BC6DD /* weiben-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weiben-120.png"; sourceTree = "<group>"; };
@@ -321,6 +327,8 @@
 		A87C6D9C1A30379E00709042 /* WBTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTag.m; sourceTree = "<group>"; };
 		A87C6D9F1A3098BB00709042 /* WBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUtility.h; sourceTree = "<group>"; };
 		A87C6DA01A3098BB00709042 /* WBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUtility.m; sourceTree = "<group>"; };
+		A889F0901AC30CF10039EB3B /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		A889F0941AC311610039EB3B /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		A88DD9B11A77C19100F58018 /* streamline-mappin-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "streamline-mappin-128.png"; sourceTree = "<group>"; };
 		A89560BE1AB28B58002A3199 /* NSArray+WBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WBUtility.h"; sourceTree = "<group>"; };
 		A89560BF1AB28B58002A3199 /* NSArray+WBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WBUtility.m"; sourceTree = "<group>"; };
@@ -332,10 +340,6 @@
 		A8A22B221AB1E707001714AE /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star2.png; sourceTree = "<group>"; };
 		A8A4C9261AB9507A00E0E572 /* WBMainBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainBackgroundView.h; sourceTree = "<group>"; };
 		A8A4C9271AB9507A00E0E572 /* WBMainBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainBackgroundView.m; sourceTree = "<group>"; };
-		A8BCDC121A983287004EC73C /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
-		A8BCDC131A983287004EC73C /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
-		A8BCDC141A983287004EC73C /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
-		A8BCDC151A983287004EC73C /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		A8BEE9A01A31B47D0075B427 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		A8BEE9A11A31B47D0075B427 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		A8BEE9A21A31B47D0075B427 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
@@ -428,6 +432,8 @@
 		A80F2FCC1A6CF935002037D8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A889F0941AC311610039EB3B /* add.png */,
+				A889F0901AC30CF10039EB3B /* camera.png */,
 				A86BD42E1AC145E1006BC6DD /* weiben-1024.png */,
 				A86BD42F1AC145E1006BC6DD /* weiben-180.png */,
 				A86BD4301AC145E1006BC6DD /* weiben-120.png */,
@@ -581,6 +587,17 @@
 			path = NonStateData;
 			sourceTree = "<group>";
 		};
+		A869A1BF1AC3F546008D8C9B /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A869A1C01AC3F54F008D8C9B /* MGSwipeButton.h */,
+				A869A1C11AC3F54F008D8C9B /* MGSwipeButton.m */,
+				A869A1C21AC3F54F008D8C9B /* MGSwipeTableCell.h */,
+				A869A1C31AC3F54F008D8C9B /* MGSwipeTableCell.m */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 		A87C6BE31A302F0400709042 = {
 			isa = PBXGroup;
 			children = (
@@ -694,8 +711,8 @@
 			children = (
 				A8C11D851A904FD10061A7C1 /* WBBarItemImageView.h */,
 				A8C11D861A904FD10061A7C1 /* WBBarItemImageView.m */,
-				A80105FB1A9B2A8300AC2CCB /* WBSwipeTableCell.h */,
-				A80105FC1A9B2A8300AC2CCB /* WBSwipeTableCell.m */,
+				A869A1C61AC3F590008D8C9B /* WBSwipeTableCell.h */,
+				A869A1C71AC3F590008D8C9B /* WBSwipeTableCell.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1296,23 +1313,12 @@
 		A87C6D411A3035B700709042 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				A869A1BF1AC3F546008D8C9B /* MGSwipeTableCell */,
 				A8CC6D8E1AAD552400764AAB /* MBProgressHUD */,
-				A8BCDC111A983261004EC73C /* MGSwipeTableCell */,
 				A8BEE9AA1A31B61C0075B427 /* ObjectiveSugar */,
 				A8BEE9951A31B4080075B427 /* ObjectiveRecord */,
 			);
 			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		A8BCDC111A983261004EC73C /* MGSwipeTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				A8BCDC121A983287004EC73C /* MGSwipeButton.h */,
-				A8BCDC131A983287004EC73C /* MGSwipeButton.m */,
-				A8BCDC141A983287004EC73C /* MGSwipeTableCell.h */,
-				A8BCDC151A983287004EC73C /* MGSwipeTableCell.m */,
-			);
-			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 		A8BEE9951A31B4080075B427 /* ObjectiveRecord */ = {
@@ -1513,6 +1519,7 @@
 				A8DD8F6E1AB938D700D0B400 /* photo-48.png in Resources */,
 				A84D8C031A95FB18006BCA79 /* streamline-map-pin-20.png in Resources */,
 				A8074D3A1AB6DE1800C57711 /* delete-32.png in Resources */,
+				A889F0951AC311610039EB3B /* add.png in Resources */,
 				A8A22B231AB1E707001714AE /* star2.png in Resources */,
 				A87C6BFB1A302F0400709042 /* Main.storyboard in Resources */,
 				A8DD8F6A1AB9385D00D0B400 /* calendar-48.png in Resources */,
@@ -1543,6 +1550,7 @@
 				A815CA871A7745D600F253A4 /* arrow-85-32.png in Resources */,
 				A86BD4341AC145E1006BC6DD /* weiben-120.png in Resources */,
 				A873CA171AB0636700AA6B5C /* circle-blue-16.png in Resources */,
+				A889F0911AC30CF10039EB3B /* camera.png in Resources */,
 				A8C61FB41AB8400000EEBDE7 /* pin-orange-32.png in Resources */,
 				A8FECF3A1AB56F9B00A9127C /* fav.png in Resources */,
 				A8C61FA61AB812A900EEBDE7 /* pin-orange-16.png in Resources */,
@@ -1568,6 +1576,7 @@
 				A8BEE9BC1A31B6300075B427 /* NSSet+ObjectiveSugar.m in Sources */,
 				A81E17141A3723E20095CF09 /* WBTimelinePresenter.m in Sources */,
 				A81E17011A371F710095CF09 /* WBTagsPresenter.m in Sources */,
+				A869A1C41AC3F54F008D8C9B /* MGSwipeButton.m in Sources */,
 				A8A4C9281AB9507A00E0E572 /* WBMainBackgroundView.m in Sources */,
 				A81E17181A3724390095CF09 /* WBTimelineViewController.m in Sources */,
 				A81E171B1A3724920095CF09 /* WBTimelineWireframe.m in Sources */,
@@ -1575,7 +1584,6 @@
 				A813A1A91A3DC5C7007284A7 /* WBSettingsWireframe.m in Sources */,
 				A813A1A31A3DC441007284A7 /* WBSettingsViewController.m in Sources */,
 				A87C6C871A302FA900709042 /* WBMainViewController.m in Sources */,
-				A80105FD1A9B2A8300AC2CCB /* WBSwipeTableCell.m in Sources */,
 				A81E172C1A372A690095CF09 /* WBPhotosViewController.m in Sources */,
 				A8BEE9A71A31B47D0075B427 /* CoreDataManager.m in Sources */,
 				A83622151A7C83D700EC00E6 /* UIView+WBUtility.m in Sources */,
@@ -1616,9 +1624,9 @@
 				A8C61FB21AB827B300EEBDE7 /* WBPhotoTableCell.m in Sources */,
 				A84377AA1A5A5918006E5B3C /* WBPostItem.m in Sources */,
 				A870A9FA1A5D4F7800DD337C /* WBStatisticsItem.m in Sources */,
-				A8BCDC171A983287004EC73C /* MGSwipeTableCell.m in Sources */,
 				A81E16F41A3719AE0095CF09 /* WBPhotosWireframe.m in Sources */,
 				A8DD8F661AB9275B00D0B400 /* WBStarredTableCell.m in Sources */,
+				A869A1C81AC3F590008D8C9B /* WBSwipeTableCell.m in Sources */,
 				A87C6C8A1A302FA900709042 /* WBPostingPresenter.m in Sources */,
 				A81E16E21A36F6B60095CF09 /* WBPostingWireframe.m in Sources */,
 				A8C715A81A91FA360084D325 /* WBPostingDismissalTransition.m in Sources */,
@@ -1627,9 +1635,9 @@
 				A87C6C851A302FA900709042 /* WBMainInteractor.m in Sources */,
 				A87C6C8C1A302FA900709042 /* WBAppDelegate.m in Sources */,
 				A87C6BF21A302F0400709042 /* main.m in Sources */,
-				A8BCDC161A983287004EC73C /* MGSwipeButton.m in Sources */,
 				A87C6C861A302FA900709042 /* WBMainPresenter.m in Sources */,
 				A8BEE9BA1A31B6300075B427 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				A869A1C51AC3F54F008D8C9B /* MGSwipeTableCell.m in Sources */,
 				A86BD43B1AC1562C006BC6DD /* WBPhotoDisplayItem.m in Sources */,
 				A8BEE9B81A31B6300075B427 /* NSArray+ObjectiveSugar.m in Sources */,
 				A8CB4E3E1A79EC2300CA2E82 /* WBStarredWireframe.m in Sources */,

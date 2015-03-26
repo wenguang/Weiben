@@ -26,7 +26,7 @@
     WBStarredDisplayItem *displayItem;
     for (WBPostItem *item in posts) {
         
-        displayItem = [WBStarredDisplayItem itemWithPostItem:item scaleSize:CGSizeMake(66, 66)];
+        displayItem = [WBStarredDisplayItem itemWithPostItem:item scaleSize:CGSizeMake(70, 70)];
         [displayArray addObject:displayItem];
     }
     
